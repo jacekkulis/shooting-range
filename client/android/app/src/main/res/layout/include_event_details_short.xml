@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/image_header_event"
+        android:layout_width="@dimen/event_details_width"
+        android:layout_height="@dimen/event_details_height"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/ic_default_image"/>
+
+    <TextView
+        android:id="@+id/field_header_event_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/image_header_event"
+        android:text="@string/default_item_event_title"
+        android:textSize="@dimen/event_title_text_size"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_layout"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@id/image_header_event"
+        android:layout_below="@id/field_header_event_title">
+
+        <TextView
+            android:id="@+id/header_event_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_price"
+            android:textSize="@dimen/event_price_text_size" />
+
+        <TextView
+            android:id="@+id/field_header_event_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_event_price"
+            android:textSize="@dimen/event_price_text_size"
+            android:layout_marginStart="6dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/participant_layout"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@id/image_header_event"
+        android:layout_below="@id/price_layout">
+
+        <TextView
+            android:id="@+id/header_event_participants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_participants"
+            android:textSize="@dimen/event_price_text_size" />
+
+        <TextView
+            android:id="@+id/field_header_event_participants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_event_number"
+            android:textSize="@dimen/event_price_text_size"
+            android:layout_marginStart="6dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

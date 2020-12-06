@@ -1,0 +1,29 @@
+{
+    "name": "ShootingRange/ShootingRange-server",
+    "description": "This is server.",
+    "version": "1.0.0-dev",
+    "type": "project",
+    "license": "MIT",
+    "keywords": ["PHP","FCM","Google","Firebase", "Notifications","Android","Chrome"],
+    "homepage": "http://google.com",
+    "authors": [
+        {
+            "name": "Jacek",
+            "email": "jacek.jk.kulis@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "ShootingRange\\PhpFirebaseCloudMessaging\\": "src/",
+            "src\\models\\": "./src/models",
+            "config\\": "./src/config",
+            "firebase\\PhpFirebaseCloudMessaging\\": "./src/firebase",
+            "ShootingRange\\": "src/",
+            "vendor\\": "vendor/"
+    }
+    }
+}

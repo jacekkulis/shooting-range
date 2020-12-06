@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "45803569032",
+    "firebase_url": "https://shootingrange-cfecd.firebaseio.com",
+    "project_id": "shootingrange-cfecd",
+    "storage_bucket": "shootingrange-cfecd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45803569032:android:99831fcb317dbfee",
+        "android_client_info": {
+          "package_name": "com.politechnika.shootingrange"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45803569032-139g7m616a7h4rd6okc8vpt0apegb005.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.politechnika.shootingrange",
+            "certificate_hash": "7997fde4867fb36dc6d664b65669c1fd3a94fd57"
+          }
+        },
+        {
+          "client_id": "45803569032-kfipeu64atemfnp19o5jvgatce7ulia0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKvTRxXZRoKBH9QVZ_jvAPysHdni66sO8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45803569032-kfipeu64atemfnp19o5jvgatce7ulia0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

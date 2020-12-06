@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_background_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_swipe_right">
+
+        <ImageView
+            android:id="@+id/add_icon"
+            android:layout_width="@dimen/ic_delete"
+            android:layout_height="@dimen/ic_delete"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/padd_10"
+            android:src="@drawable/ic_add_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/padd_10"
+            android:layout_toEndOf="@id/add_icon"
+            android:text="@string/register"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_foreground"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="@dimen/padd_10">
+
+        <!-- Thumbnail Image -->
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/image_event_thumbnail"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentStart="true"/>
+
+        <!-- Event Title -->
+        <TextView
+            android:id="@+id/field_event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_event_thumbnail"
+            android:layout_toEndOf="@+id/image_event_thumbnail"
+            android:text="@string/default_item_event_title"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/field_event_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/field_event_title"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image_event_thumbnail"
+            android:text="@string/default_item_event_description"
+            android:textSize="14sp" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/field_event_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/field_event_description"
+            android:text="@string/default_item_event_date"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</FrameLayout>
